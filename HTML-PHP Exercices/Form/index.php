@@ -6,19 +6,20 @@ $PFC_RESULT = $PFC_TAB[rand(0, 2)];
 
 require "header.php";
 ?>
-
-<?php if (isset($_POST["number"]) && $_POST["number"] < $number): ?>
-    <div class="container mt-5">
-        <h1 class="text-center mt-5">C'est plus (<?=$_POST["number"]?>)!</h1>
-    </div>
-<?php elseif (isset($_POST["number"]) && $_POST["number"] > $number): ?>
-    <div class="container mt-5">
-        <h1 class="text-center mt-5">C'est moins (<?=$_POST["number"]?>)!</h1>
-    </div>
-<?php else: ?>
-    <div class="container mt-5">
-        <h1 class="text-center mt-5">Bravo vous avez trouvé <?=$number?>!</h1>
-    </div>
+<?php if (isset($_POST["number"])): ?>
+    <?php if ($_POST["number"] < $number): ?>
+        <div class="container mt-5">
+            <h1 class="text-center mt-5">C'est plus (<?=$_POST["number"]?>)!</h1>
+        </div>
+    <?php elseif ($_POST["number"] > $number): ?>
+        <div class="container mt-5">
+            <h1 class="text-center mt-5">C'est moins (<?=$_POST["number"]?>)!</h1>
+        </div>
+    <?php else: ?>
+        <div class="container mt-5">
+            <h1 class="text-center mt-5">Bravo vous avez trouvé <?=$number?>!</h1>
+        </div>
+    <?php endif; ?>
 <?php endif; ?>
 
 <form action="index.php" method="POST">
