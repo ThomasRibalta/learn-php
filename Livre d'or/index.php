@@ -1,4 +1,6 @@
 <?php
+phpinfo();
+die();
 date_default_timezone_set('Europe/Paris');
 $title = "Livre d'or";
 require 'header.php';
