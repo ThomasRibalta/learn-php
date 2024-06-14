@@ -5,12 +5,12 @@ try
 {
     if (isset($_POST['title'], $_POST['content']) && !empty($_POST['title']) && !empty($_POST['content']))
     {
-        $title = $_POST['title'];
+        $titleAdd = $_POST['title'];
         $content = $_POST['content'];
         $date = new DateTime();
         $query = $pdo->prepare("INSERT INTO posts (title, content, created_at) VALUES (:title, :content, :moment)");
         $query->execute([
-            'title' => $title,
+            'title' => $titleAdd,
             'content' => $content,
             'moment' => $date->getTimestamp()
         ]);
