@@ -1,0 +1,17 @@
+{
+  "name": "thomas.rba/intro-tp-auth",
+  "authors": [
+    {
+      "name": "Thomas",
+      "email": "thomasribalta@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/"
+    }
+  },
+  "require-dev": {
+    "symfony/var-dumper": "^7.1"
+  }
+}
