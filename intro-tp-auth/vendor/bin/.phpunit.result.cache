@@ -1,0 +1,1 @@
+{"version":1,"defects":{"AuthTest::testThatWeCanGetTheName":8,"AuthTest::testValidLogin":8,"AuthTest::testLoginSucces":8},"times":{"AuthTest::testThatWeCanGetTheName":0.006,"AuthTest::testValidLogin":0.667,"AuthTest::testValidLoginBadUsername":0.003,"AuthTest::testValidLoginBadPassword":0.059,"AuthTest::testLoginSucces":0.061}}
