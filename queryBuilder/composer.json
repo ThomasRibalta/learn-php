@@ -1,0 +1,11 @@
+{
+  "name": "thomas.rba/php-sql-query-builder",
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^11.2"
+  }
+}
